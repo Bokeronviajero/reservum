@@ -14,6 +14,9 @@
     <h1>Hello, world!</h1>
 
     <!--Formulario de entrada de reservas -->
+    <div class="container">
+        <!-- Content here -->
+      
     <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -31,7 +34,9 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 
-
+    </div>
+    <!--Fin container -->
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
