@@ -21,7 +21,7 @@ Route::get('/hola', function () {
     return "Hola Mundo";
 });
 
-Route::get('/entradaReserva', function () {
+Route::get('/entradareserva', function () {
     return view('entradaReserva');
 });
 

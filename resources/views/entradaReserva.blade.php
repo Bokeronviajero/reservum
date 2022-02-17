@@ -12,29 +12,55 @@
   </head>
   <body>
     
-
     <!--Formulario de entrada de reservas -->
     <div class="container">
-      <h1>Reservum</h1>
-        <!-- Content here -->
-    <div class="col">  
-    <form>
+      <form>
+      <!-- Content here -->
+      <div class="row justify-content-center">
+        <h1>Reservum</h1>
+        <div class="col-4">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <label for="nombreCliente" class="form-label">Nombre Cliente</label>
+          <input type="text" class="form-control" id="nombreCliente" aria-describedby="nombreClienteHelp">
+          <div id="nombreClienteHelp" class="form-text">Indica tu nombre y apellido.</div>
+        </div>
+        <div class="mb-3">
+          <label for="fechaEntrada" class="form-label">Fecha de Entrada</label>
+          <input type="date" class="form-control" id="fechaEntrada" aria-describedby="fechaEntradaHelp">
+          <div id="fechaEntradaHelp" class="form-text">Indica la fecha de entrada del cliente en el alojamiento.</div>
+        </div>
+        <div class="mb-3">
+          <label for="fechaSalida" class="form-label">Fecha de Salida</label>
+          <input type="date" class="form-control" id="fechaSalida" aria-describedby="fechaSalidaHelp">
+          <div id="fechaSalidaHelp" class="form-text">Indica la fecha de salida del cliente en el alojamiento.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" class="form-text">No compartiremos tu email con nadie.</div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="col-4">
+          <div class="mb-3">
+            <label for="agencia" class="form-label">Agencia</label>
+            <input type="text" class="form-control" id="agencia" aria-describedby="nombreAgenciaHelp">
+            <div id="nombreAgenciaHelp" class="form-text">Indica nombre de la agencia que aporta cliente.</div>
+          </div>
+          <div class="mb-3">
+            <label for="alojamiento" class="form-label">Alojamiento</label>
+            <input type="text" class="form-control" id="alojamiento" aria-describedby="alojamientoHelp">
+            <div id="alojamientoHelp" class="form-text">Indica nombre del alojamiento donde se queda el cliente.</div>
+          </div>
+          <div class="mb-3">
+            <label for="numeroReserva" class="form-label">Numero de la Reserva</label>
+            <input type="text" class="form-control" id="numeroReserva" aria-describedby="numeroReservaHelp">
+            <div id="numeroReservaHelp" class="form-text">Indica el numero o referencia de la reserva.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        </div><!--Fin columna -->
       </form>
-    </div><!--Fin columna -->
+       
     </div><!--Fin container -->
     
 
