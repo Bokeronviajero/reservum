@@ -14,8 +14,8 @@
     
 
     <!--Formulario de entrada de reservas -->
-    <h1>Reservum</h1>
     <div class="container">
+      <h1>Reservum</h1>
         <!-- Content here -->
     <div class="col">  
     <form>
