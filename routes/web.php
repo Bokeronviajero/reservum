@@ -25,4 +25,7 @@ Route::get('/entradareserva', function () {
     return view('entradaReserva');
 });
 
+Route::get('/crear', function () {
+    return view('reservas.crear');
+});
 
