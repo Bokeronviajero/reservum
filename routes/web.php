@@ -21,8 +21,8 @@ Route::get('/hola', function () {
     return "Hola Mundo";
 });
 
-Route::get('/entradareserva', function () {
-    return view('entradareserva');
+Route::get('/entradaReserva', function () {
+    return view('entradaReserva');
 });
 
 
