@@ -28,6 +28,9 @@ Route::get('/entradareserva', function () {
 Route::get('/crear', function () {
     return view('reservas.crear');
 });
+Route::get('/reservas', function () {
+    return view('reservas.listado');
+});
 
 Route::any('reservas/store','ReservaController@store')->name('reservas.store');
 
