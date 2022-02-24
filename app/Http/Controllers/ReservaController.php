@@ -36,10 +36,10 @@ class ReservaController extends Controller
     public function store(Request $request)
     {
         //aqui le decimos que haga la validacion
-        $request->validate(
+        /* $request->validate(
             ['nombreCliente'=> 'required | max:20',
             'numeroReserva'=> 'required | max:10 | unique:reservas,numeroReserva']
-        );
+        ); */
         
         //aqui guardamos en la base de datos
         //atencion el nombre de los campos del formulario deben de coincidir

@@ -29,3 +29,5 @@ Route::get('/crear', function () {
     return view('reservas.crear');
 });
 
+Route::any('reservas/store','ReservaController@store')->name('reservas.store');
+

@@ -14,14 +14,14 @@
     
     <!--Formulario de entrada de reservas -->
     <div class="container">
-      <form>
+      <form action="{{route('reservas.store')}}" enctype="multipart/form-data" method="post">
       <!-- Content here -->
       <div class="row justify-content-center">
         <h1>Entrada de Reserva</h1>
         <div class="col-4">
         <div class="mb-3">
-          <label for="nombreCliente" class="form-label">Nombre Cliente</label>
-          <input type="text" class="form-control" id="nombreCliente" aria-describedby="nombreClienteHelp">
+          <label for="nombre" class="form-label">Nombre Cliente</label>
+          <input type="text" class="form-control" id="nombre" aria-describedby="nombreClienteHelp">
           <div id="nombreClienteHelp" class="form-text">Indica tu nombre y apellido.</div>
         </div>
         <div class="mb-3">
