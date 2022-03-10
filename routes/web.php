@@ -36,4 +36,6 @@ Route::get('/entradavacacion', function () {
     return view('entradaVacacion');
 });
 
+Route::any('vacaciones/store','VacacioneController@store')->name('vacaciones.store');
+
 

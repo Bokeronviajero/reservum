@@ -14,7 +14,9 @@
     
     <!--Formulario de entrada de reservas -->
     <div class="container">
-      <form>
+     
+        <form action="{{route('vacaciones.store')}}" enctype="multipart/form-data" method="post">
+          @csrf
       <!-- Content here -->
       <div class="row justify-content-center">
         <h1>Entrada de Vacaciones</h1>
