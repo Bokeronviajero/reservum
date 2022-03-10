@@ -21,10 +21,10 @@ Route::get('/hola', function () {
     return "Hola Mundo";
 });
 
-Route::get('/entradavacacion', function () {
-    return view('entradaVacacion');
+Route::get('/entradaperiodo', function () {
+    return view('entradaPeriodo');
 });
 
-Route::any('vacaciones/store','VacacioneController@store')->name('vacaciones.store');
+Route::any('periodos/store','PeriodoController@store')->name('periodos.store');
 
 

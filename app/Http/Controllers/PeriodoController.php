@@ -1,12 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Vacacione;
-use Illuminate\Http\Response;
 
 use Illuminate\Http\Request;
 
-class VacacioneController extends Controller
+class PeriodoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +14,6 @@ class VacacioneController extends Controller
     public function index()
     {
         //
-        $vacaciones= Vacacione::all();
-        return view ('listar-vacaciones',compact('vacaciones'));
     }
 
     /**
@@ -38,9 +34,7 @@ class VacacioneController extends Controller
      */
     public function store(Request $request)
     {
-        //aqui guardamos el periodo de vacaciones
-        $vacacione=Vacacione::create($request->all());
-
+        //
     }
 
     /**
