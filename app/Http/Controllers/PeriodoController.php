@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Periodo;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class PeriodoController extends Controller
 {
@@ -38,6 +40,7 @@ class PeriodoController extends Controller
     public function store(Request $request)
     {
         //
+        $articulo=Articulo::create($request->all());
     }
 
     /**
