@@ -34,7 +34,9 @@ class VacacioneController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //aqui guardamos el periodo de vacaciones
+        $vacacione=Vacacione::create($request->all());
+        
     }
 
     /**
