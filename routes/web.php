@@ -21,17 +21,6 @@ Route::get('/hola', function () {
     return "Hola Mundo";
 });
 
-Route::get('/entradareserva', function () {
-    return view('entradaReserva');
-});
-
-Route::get('/crear', function () {
-    return view('reservas.crear');
-});
-Route::get('/reservas', function () {
-    return view('reservas.listado');
-});
-
 Route::get('/entradavacacion', function () {
     return view('entradaVacacion');
 });
