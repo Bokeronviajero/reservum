@@ -8,6 +8,13 @@ use Illuminate\Http\Response;
 
 class PeriodoController extends Controller
 {
+
+    protected $periodos;
+    public function __construct(Periodo $periodos)
+    {
+        $this->periodos = $periodos;
+    }
+
     /**
      * Display a listing of the resource.
      *
