@@ -32,25 +32,13 @@
                 <td>{{ $periodo -> fechaInicio }}</td>
                 <td>{{ $periodo -> fechaFin }}</td>
                 <td>{{ $periodo -> empleadoId }}</td>
-
-                
                 
                 <td> 
-                <a href="{{ route('periodos.show', $periodo->id)}}">
-                  {{ $periodo -> nombre }}
+                
                   </a>
                 </td> 
                 <td>
-                <!-- aqui ponemos boton de borrar por post ***** AZUL *****-->
-                <td>
-                    <div class="form-group">
-                        <form action="{{ route('periodos.destroy',$periodo->id)}}" method="post">
-                        @method ('DELETE')
-                        @csrf
-                        <button type="submit" class="btn btn-primary">BORRAR</button>
-                        </form>
-                    </div>
-                </td>
+                
                 </form>
                         </div>
                     </div>
@@ -58,9 +46,6 @@
                 </div>
                 </td>
               
-               
-            
-            
             </tr>
                 {{-- @endforeach --}}
                 </tbody>
