@@ -29,6 +29,7 @@ Route::get('/listarperiodos', function () {
     return view('listarPeriodos');
 });
 
+Route::get('/periodos', 'PeriodoController@index')->name('periodos.index');
 Route::any('periodos/store','PeriodoController@store')->name('periodos.store');
 
 

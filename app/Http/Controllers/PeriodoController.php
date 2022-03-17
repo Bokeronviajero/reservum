@@ -18,7 +18,7 @@ class PeriodoController extends Controller
         //
         $periodos= Periodo::all();
         
-            return view ('listarPeriodos',compact('periodos'));
+            return view ('periodos.listarPeriodos',compact('periodos'));
     }
 
     /**
