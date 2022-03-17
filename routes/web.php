@@ -22,7 +22,7 @@ Route::get('/hola', function () {
 });
 
 Route::get('/entradaperiodo', function () {
-    return view('entradaPeriodo');
+    return view('periodos.entradaPeriodo');
 });
 
 Route::get('/listarperiodos', function () {
