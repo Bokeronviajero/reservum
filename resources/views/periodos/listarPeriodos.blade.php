@@ -19,8 +19,8 @@
             <thead>
               <tr>
               <th>id</th>
-              <th>FechaInicio</th>
-              <th>FechaFin</th>
+              <th>Fecha Inicio</th>
+              <th>Fecha Fin</th>
               <th>Empleado</th>
               
             </tr>
