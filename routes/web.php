@@ -34,4 +34,4 @@ Route::get('/listarperiodos', function () {
 Route::any('periodos/store','PeriodoController@store')->name('periodos.store');
 Route::any('periodos/create','PeriodoController@create')->name('periodos.create');
 
-Route::get('/periodos', [PeriodoController::class, 'index']);
+Route::get('periodos', [PeriodoController::class, 'index']);
