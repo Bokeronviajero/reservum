@@ -35,7 +35,7 @@ class PeriodoController extends Controller
      */
     public function create()
     {
-        //
+        return view('periodos.entradaPeriodo');
     }
 
     /**
