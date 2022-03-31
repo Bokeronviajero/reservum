@@ -35,7 +35,8 @@ class PeriodoController extends Controller
      */
     public function create()
     {
-        return view('periodos.entradaPeriodo');
+       // dd('entra');
+        return view ('periodos.entradaPeriodo');
     }
 
     /**
@@ -46,7 +47,7 @@ class PeriodoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
         $periodo=Periodo::create($request->all());
     }
 

@@ -15,7 +15,7 @@
     <!--Formulario de entrada de reservas -->
     <div class="container">
      
-        <form action="{{route('periodos.store')}}" enctype="multipart/form-data" method="post">
+        <form action="{{route('/periodos.store')}}" enctype="multipart/form-data" method="post">
           @csrf
       <!-- Content here -->
       <div class="row justify-content-center">

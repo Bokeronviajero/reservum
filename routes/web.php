@@ -22,10 +22,10 @@ Route::get('/hola', function () {
     return "Hola Mundo";
 });
 
-//Route::get('/entradaperiodo', function () {
+/* Route::get('/entradaperiodo', function () {
     return view('periodos.entradaPeriodo');
 });
-
+ */
 Route::get('/listarperiodos', function () {
     return view('periodos.listarPeriodos');
 });
