@@ -24,7 +24,7 @@ class PeriodoController extends Controller
     {
         //
         $periodos= Periodo::all();
-        dd($periodos);
+        //dd($periodos);
             return view ('periodos.listarPeriodos',compact('periodos'));
     }
 
