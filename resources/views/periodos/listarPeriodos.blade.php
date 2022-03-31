@@ -26,12 +26,12 @@
             </tr>
             </thead>
             <tbody>
-              {{-- @foreach ($periodos as $periodo) --}}
+               @foreach ($periodos as $periodo)
             <tr>
-              {{--   <td>{{ $periodo -> id }}</td>
+                 <td>{{ $periodo -> id }}</td>
                 <td>{{ $periodo -> fechaInicio }}</td>
                 <td>{{ $periodo -> fechaFin }}</td>
-                <td>{{ $periodo -> empleadoId }}</td> --}}
+                <td>{{ $periodo -> empleadoId }}</td>
                 
                 <td> 
                 
@@ -47,7 +47,7 @@
                 </td>
               
             </tr>
-                {{-- @endforeach --}}
+                 @endforeach
                 </tbody>
                 </h5>
                 </table>
