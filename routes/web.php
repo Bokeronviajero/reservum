@@ -36,5 +36,5 @@ Route::get('/listarperiodos', function () {
 
 Route::get('/periodos/', [PeriodoController::class, 'index']);
 Route::get('/periodos/create',[PeriodoController::class, 'create']);
-Route::post('periodos/store',[PeriodoController::class, 'store']);
+Route::post('/periodos/store',[PeriodoController::class, 'store']);
 
