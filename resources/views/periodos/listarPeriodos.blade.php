@@ -4,17 +4,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <title>Periodos</title>
   </head>
   <body>
-    
     <!--Formulario de entrada de reservas -->
     <div class="container">
-     
+      <h3>Listado de periodos</h3>
         <table class="table">
             <thead>
               <tr>
@@ -22,39 +19,22 @@
               <th>Fecha Inicio</th>
               <th>Fecha Fin</th>
               <th>Empleado</th>
-              
-            </tr>
+              </tr>
             </thead>
             <tbody>
                @foreach ($periodos as $periodo)
-            <tr>
-                 <td>{{ $periodo -> id }}</td>
+                <tr>
+                <td>{{ $periodo -> id }}</td>
                 <td>{{ $periodo -> fecha_inicio }}</td>
                 <td>{{ $periodo -> fecha_fin }}</td>
                 <td>{{ $periodo -> empleado_id }}</td>
-                
-                <td> 
-                
-                  </a>
-                </td> 
-                <td>
-                
-                </form>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                </td>
-              
-            </tr>
-                 @endforeach
-                </tbody>
-                </h5>
-                </table>
+                </tr>
+                @endforeach
+            </tbody>
+          </table>
        
     </div><!--Fin container -->
     
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
