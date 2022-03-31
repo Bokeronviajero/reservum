@@ -29,9 +29,9 @@
                @foreach ($periodos as $periodo)
             <tr>
                  <td>{{ $periodo -> id }}</td>
-                <td>{{ $periodo -> fechaInicio }}</td>
-                <td>{{ $periodo -> fechaFin }}</td>
-                <td>{{ $periodo -> empleadoId }}</td>
+                <td>{{ $periodo -> fecha_inicio }}</td>
+                <td>{{ $periodo -> fecha_fin }}</td>
+                <td>{{ $periodo -> empleado_id }}</td>
                 
                 <td> 
                 
