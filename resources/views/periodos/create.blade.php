@@ -19,16 +19,12 @@
   <h1>Nuevo Periodo</h1>
   <!-- aqui creo el formulario   -->
   
-    <form action="{{route('periodos.store')}}" enctype="text/plain" method="post">
-    @csrf
+    
     @include("periodos.entradaPeriodo",['FormType'=>'create'])
     {{-- *************** boton enviar y volver ********** --}}
-    <div class="button-group">
-        <input class="btn btn-primary btn-small" type="submit" value="Enviar">
-        <a href="{{route('periodos.index')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Volver</a>
-    </div>
+    
       <!-- ***********fin boton enviar y volver -->
-    </form>
+    
   
 </div>
 @endsection

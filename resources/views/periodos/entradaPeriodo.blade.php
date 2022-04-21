@@ -38,40 +38,40 @@
     <div class="container">
       <h1>Entrada de Vacaciones</h1>
      
-        <form  action="{{ route('periodos.store')}}" enctype=('text/plain') method=('post')>
+        <form  action="{{ route('periodos.store')}}" enctype="text/plain" method='post'>
           @csrf
-      <!-- Content here -->
-      <div class="row justify-content-center">
-        <div class="col-4">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre Empleado</label>
-          <input type="text" class="form-control" id="nombre" aria-describedby="nombreEmpleadoHelp">
-          <div id="nombreEmpleadoHelp" class="form-text">Indica tu nombre y apellido.</div>
-        </div>
-        <div class="mb-3">
-          <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
-          <input type="date" class="form-control" id="fechaInicio" aria-describedby="fechaInicioHelp">
+          <!-- Content here -->
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Empleado</label>
+                <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="nombreEmpleadoHelp">
+                <div id="nombreEmpleadoHelp" class="form-text">Indica tu nombre y apellido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="empleado" class="form-label">id del empleado</label>
+                <input type="text" name="empleado_id" class="form-control" id="empleadoid" aria-describedby="empleadoHelp">
+                <div id="empleadoHelp" class="form-text">Indica el id del empleado.</div>
+              </div>
+              <div class="mb-3">
+                <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
+          <input type="date" nombre="fecha_inicio" class="form-control" id="fechaInicio" aria-describedby="fechaInicioHelp">
           <div id="fechaInicioHelp" class="form-text">Indica la fecha de inicio de las vacaciones del empleado.</div>
         </div>
         <div class="mb-3">
           <label for="fechaFin" class="form-label">Fecha de Fin</label>
-          <input type="date" class="form-control" id="fechaFin" aria-describedby="fechaFinHelp">
+          <input type="date" name="fecha_fin" class="form-control" id="fechaFin" aria-describedby="fechaFinHelp">
           <div id="fechaFinHelp" class="form-text">Indica la fecha de Fin de las vacaciones del empleado.</div>
         </div>
         <div class="mb-3">
-          <label for="empleado" class="form-label">id del empleado</label>
-          <input type="text" class="form-control" id="empleadoid" aria-describedby="empleadoHelp">
-          <div id="empleadoHelp" class="form-text">Indica el id del empleado.</div>
+          <label for="fechaCreate" class="form-label">Fecha create</label>
+          <input type="date" name="create_at" class="form-control" id="fecha_create" aria-describedby="fechaInicioHelp">
+          <div id="fechaCreateHelp" class="form-text">Indica la fecha de inicio de las vacaciones del empleado.</div>
         </div>
         <div class="mb-3">
-          <label for="fechaInicio" class="form-label">Fecha create</label>
-          <input type="date" class="form-control" id="fechaInicio" aria-describedby="fechaInicioHelp">
-          <div id="fechaInicioHelp" class="form-text">Indica la fecha de inicio de las vacaciones del empleado.</div>
-        </div>
-        <div class="mb-3">
-          <label for="fechaFin" class="form-label">Fecha update</label>
-          <input type="date" class="form-control" id="fechaFin" aria-describedby="fechaFinHelp">
-          <div id="fechaFinHelp" class="form-text">Indica la fecha de Fin de las vacaciones del empleado.</div>
+          <label for="fechaUpdate" class="form-label">Fecha update</label>
+          <input type="date" name="update_at" class="form-control" id="fecha_update" aria-describedby="fechaFinHelp">
+          <div id="fechaUpdateHelp" class="form-text">Indica la fecha de Actualizacion de las vacaciones del empleado.</div>
         </div>
         
         
