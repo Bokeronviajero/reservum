@@ -27,7 +27,7 @@
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
               <a class="nav-link" href="/periodos/">Periodos</a>
-              <a class="nav-link" href="/periodos/crear">Crear</a>
+              <a class="nav-link" href="/periodos/create">Crear</a>
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </div>
           </div>
