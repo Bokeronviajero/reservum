@@ -38,7 +38,7 @@
     <div class="container">
       <h1>Entrada de Vacaciones</h1>
      
-        <form method="post" action="{{ route('periodos.store') }}"  >
+        <form  action="{{ route('periodos.store') enctype='text/plain' method='post' }}"  >
           @csrf
       <!-- Content here -->
       <div class="row justify-content-center">

@@ -45,7 +45,7 @@ class PeriodoController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request);
+        dd($request);
         $periodo=Periodo::create($request->all());
     }
 
