@@ -14,27 +14,25 @@ use App\Http\Controllers\PeriodoController;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
+
+Route::get('/', function () {
+    return view('bienvenido');
+}); 
 
 Route::get('/hola', function () {
     return "Hola Mundo";
 });
 
-/* Route::get('/entradaperiodo', function () {
-    return view('periodos.entradaPeriodo');
-});
- */
 Route::get('/listarperiodos', function () {
     return view('periodos.listarPeriodos');
 });
 
 
 
-//Route::post('periodos/create','PeriodoController@create')->name('periodos.create');
-
 Route::get('/periodos/', [PeriodoController::class, 'index']);
-Route::get('/periodos/create',[PeriodoController::class, 'create']);
-Route::post('/periodos/store',[PeriodoController::class, 'store']);
+Route::get('/periodos/create',[PeriodoController::class, 'create'])->name('periodos.create');
+Route::post('/periodos/store',[PeriodoController::class, 'store'])->name('periodos.store');
 
