@@ -65,7 +65,7 @@
         </div>
         <div class="mb-3">
           <label for="fechaCreate" class="form-label">Fecha create</label>
-          <input type="date" name="create_at" class="form-control" id="fecha_create" aria-describedby="fechaInicioHelp">
+          <input type="date" name="created_at" class="form-control" id="fecha_create" aria-describedby="fechaInicioHelp">
           <div id="fechaCreateHelp" class="form-text">Indica la fecha de inicio de las vacaciones del empleado.</div>
         </div>
         <div class="mb-3">
