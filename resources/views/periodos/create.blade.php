@@ -16,14 +16,10 @@
 <!-- ******************************** -->
 <h5>
 <div class="container">
-  <h1>Nuevo Periodo</h1>
+  <h1>Nuevo Periodo hasfasdfasdfasd</h1>
   <!-- aqui creo el formulario   -->
-  
-    
     @include("periodos.entradaPeriodo",['FormType'=>'create'])
-    {{-- *************** boton enviar y volver ********** --}}
-    
-      <!-- ***********fin boton enviar y volver -->
+   
     
   
 </div>

@@ -20,7 +20,23 @@ class PeriodoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    
+    public function prueba (){
+        return view ('periodos.prueba');
+    }
+
+    public function prueba_store (Request $request){
+        
+        dd($request->all());
+
+        $periodo = new Periodo();
+        $periodo->nombre = $request->nombre;
+        $periodo->save();
+        return redirect()->route('periodos.prueba');
+    }
+    
+    
+     public function index()
     {
         //
         $periodos= Periodo::all();
@@ -45,7 +61,7 @@ class PeriodoController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+       //dd($request->all());
         $periodo=Periodo::create($request->all());
     }
 

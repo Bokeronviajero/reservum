@@ -9,6 +9,6 @@ class Periodo extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['fechaInicio','fechaFin'];
+    protected $fillable = ['fecha_inicio','fecha_fin','empleado_id'];
 
 }

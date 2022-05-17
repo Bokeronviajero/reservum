@@ -35,4 +35,8 @@ Route::get('/listarperiodos', function () {
 Route::get('/periodos/', [PeriodoController::class, 'index'])->name('index');
 Route::get('/periodos/create',[PeriodoController::class, 'create'])->name('periodos.create');
 Route::post('/periodos/store',[PeriodoController::class, 'store'])->name('periodos.store');
+Route::get('/periodos/prueba',[PeriodoController::class, 'prueba'])->name('periodos.prueba');
+Route::post('/periodos/prueba_store',[PeriodoController::class, 'prueba_store'])->name('periodos.prueba_store');
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

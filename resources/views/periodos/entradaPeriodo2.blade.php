@@ -37,34 +37,18 @@
     <!--Formulario de entrada de reservas -->
     <div class="container">
       <h1>Entrada de Vacaciones</h1>
-      <form action="{{route('periodos.store')}}" method="POST">
-          @csrf
-          <!-- Content here -->
-          <div class="row justify-content-center">
-            <div class="col-4">
-              <div class="mb-3">
-                <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
-                <input type="date" name="fecha_inicio" class="form-control" id="fechaInicio" aria-describedby="fechaInicioHelp">
-                <div id="fechaInicioHelp" class="form-text">Indica la fecha de Inicio de las vacaciones del empleado.</div>
-              </div>         
-        <div class="mb-3">
-          <label for="fechaFin" class="form-label">Fecha de Fin</label>
-          <input type="date" name="fecha_fin" class="form-control" id="fechaFin" aria-describedby="fechaFinHelp">
-          <div id="fechaFinHelp" class="form-text">Indica la fecha de Fin de las vacaciones del empleado.</div>
-        </div>
-                  
-              <div class="mb-3">
-                <label for="empleado" class="form-label">id del empleado</label>
-                <input type="text" name="empleado_id" class="form-control" id="empleadoid" aria-describedby="empleadoHelp">
-                <div id="empleadoHelp" class="form-text">Indica el id del empleado.</div>
-              </div>
-
-         
         
-          <button type="submit" class="btn btn-primary">Enviar</button>
+      <form action="{{route('periodos.store')}}" method="POST">
+        @csrf
+       
+        <div class="form-group">
+          <label for="empleado_id">Empleado</label>
+         <input type="text" class="form-control" id="empleado_id" name="empleado_id" aria-describedby="empleado_id" placeholder="Empleado">
         </div>
-        </div><!--Fin columna -->
-      </form>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+
     </div><!--Fin container -->
     <!-- Optional JavaScript; choose one of the two! -->
 
